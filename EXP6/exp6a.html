@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal and External JavaScript</title>
+  <script>
+    function internalGreet() {
+      let name = prompt("Enter your name:");
+      alert("Hello, " + name + "! This is internal JavaScript.");
+    }
+  </script>
+  <script src="exp6a.js"></script>
+</head>
+<body>
+  <h1>JavaScript Example</h1>
+  <button onclick="internalGreet()">Internal JS Alert</button>
+  <button onclick="externalGreet()">External JS Alert</button>
+</body>
+</html>

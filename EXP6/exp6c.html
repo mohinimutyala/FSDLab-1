@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Input Methods</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdf6e3;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 30px;
+    }
+    input, button {
+      padding: 10px 15px;
+      margin: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #187bcd;
+    }
+    #output {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #444;
+    }
+  </style>
+  <script>
+    function getInputMethods() {
+      let namePrompt = prompt("Enter your name (prompt):");
+      let agePrompt = prompt("Enter your age (prompt):");
+
+      let nameField = document.getElementById("nameField").value;
+      let ageField = document.getElementById("ageField").value;
+
+      alert("Prompt Input - Name: " + namePrompt + ", Age: " + agePrompt);
+
+      document.getElementById("output").innerHTML = 
+        "Input Field Values - Name: " + nameField + ", Age: " + ageField;
+
+      console.log("Prompt Input -> Name: " + namePrompt + ", Age: " + agePrompt);
+      console.log("Field Input -> Name: " + nameField + ", Age: " + ageField);
+    }
+  </script>
+</head>
+<body>
+  <h1>JavaScript Input Methods</h1>
+  <input type="text" id="nameField" placeholder="Enter your name">
+  <input type="number" id="ageField" placeholder="Enter your age">
+  <br>
+  <button onclick="getInputMethods()">Submit</button>
+  <div id="output"></div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Output Methods</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 30px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #output {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #444;
+    }
+    p {
+      color: #555;
+      font-size: 16px;
+    }
+  </style>
+  <script>
+    function displayOutput() {
+      let name = prompt("Enter your name:");
+      let age = prompt("Enter your age:");
+
+      alert("Hello " + name + ", your age is " + age);
+      document.getElementById("output").innerHTML = "Hello " + name + ", welcome to the page!";
+      console.log("Name: " + name + ", Age: " + age);
+      document.write("<p>Your name is " + name + " and your age is " + age + " (using document.write)</p>");
+    }
+  </script>
+</head>
+<body>
+  <h1>JavaScript Output Methods</h1>
+  <button onclick="displayOutput()">Show Output</button>
+  <div id="output"></div>
+</body>
+</html>
