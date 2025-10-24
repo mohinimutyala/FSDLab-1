@@ -1,0 +1,62 @@
+p {
+    color: blue;
+}
+
+#unique {
+    color: red;
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+h3, p {
+    font-family: Arial, sans-serif;
+}
+
+* {
+    margin: 5px;
+}
+
+.parent p {
+    color: green;
+}
+
+.parent > span > p {
+    color: darkorange;
+}
+
+h3 + p {
+    color: brown;
+}
+
+h3 ~ p {
+    font-style: italic;
+}
+
+a:hover {
+    color: purple;
+}
+
+button:active {
+    background-color: lightblue;
+}
+
+.pseudo::first-letter {
+    font-size: 24px;
+    color: crimson;
+}
+
+.pseudo::after {
+    content: " (End of paragraph)";
+    color: gray;
+}
+
+input[type="text"] {
+    border: 2px solid blue;
+}
+
+input[type="email"] {
+    border: 2px solid green;
+}
