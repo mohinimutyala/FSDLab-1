@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form Validation</title>
+  <script src="c.js" defer></script>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center; padding: 40px; background-color: #f0fff0;">
+  <h1 style="color: #333;">Registration Form</h1>
+  <form id="regForm" onsubmit="return validateForm()" style="display:inline-block; text-align:left; background-color:#e6f7ff; padding:20px; border-radius:10px;">
+    <label>Name:</label><br>
+    <input type="text" id="name" placeholder="Enter Name" style="padding:5px; width:250px;"><br><br>
+    <label>Mobile:</label><br>
+    <input type="text" id="mobile" placeholder="Enter Mobile" style="padding:5px; width:250px;"><br><br>
+    <label>Email:</label><br>
+    <input type="text" id="email" placeholder="Enter Email" style="padding:5px; width:250px;"><br><br>
+    <input type="submit" value="Register" style="padding:10px 20px; cursor:pointer; background-color:#4CAF50; color:white; border:none; border-radius:5px;">
+  </form>
+  <div id="output" style="margin-top:20px; font-weight:bold; color:red;"></div>
+</body>
+</html>
