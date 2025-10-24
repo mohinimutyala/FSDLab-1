@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 40px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
+.font-example {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: oblique;
+  text-align: left;
+}
+
+.decor-example {
+  text-decoration: underline overline;
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 18px;
+  font-weight: 600;
+}
